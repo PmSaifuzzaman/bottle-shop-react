@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       
-      <h2>Bottle Shop</h2>
+      <h1 className='app'>Bottle Shop</h1>
       <Bottles></Bottles>
     </>
   )
