@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import Bottle from "../Bottle/Bottle";
 
 
 
@@ -14,6 +15,9 @@ const Bottles = () => {
     return (
         <div>
             <h2>Items:{bottles.length}</h2>
+            {
+                bottles.map(bottle => <Bottle key={bottle.id} bottle={bottle}></Bottle>)
+            }
         </div>
     );
 };
